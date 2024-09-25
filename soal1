@@ -1,1 +1,31 @@
-
+program diskon;
+uses crt;
+var harga,p:real; q:string;
+begin
+    clrscr;
+    write('masukkan total belanjaan: ');
+    readln(harga);
+    
+    if harga>1000000 then
+    begin
+    p:=harga-0.3*harga;
+    q:='diskon sebesar=30%'
+    end
+    else if harga>500000 then
+    begin
+    p:=harga-0.2*harga;
+    q:='diskon sebesar=20%'
+    end
+    else if harga>100000 then
+    begin
+    p:=harga-0.1*harga;
+    q:='diskon sebesar=10%'
+    end
+    else 
+    begin
+    p:=harga;
+    q:='tidak ada diskon'
+    end;
+    writeln('harga yang harus dibayarkan: ',p:2:0);
+    write(q);
+end.
