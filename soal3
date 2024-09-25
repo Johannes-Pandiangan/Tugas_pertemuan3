@@ -10,11 +10,10 @@ begin
     readln(angka2);
 
     case oper of
-    '+':p:=angka1+angka2;
-    '-':p:=angka1-angka2;
-    'x':p:=angka1*angka2; //aku pake x kecil
-    '/':p:=angka1/angka2; //aku pake garing(/)
+    'penjumlahan':p:=angka1+angka2;
+    'pengurangan':p:=angka1-angka2;
+    'perkalian':p:=angka1*angka2; 
+    'pembagian':p:=angka1/angka2; 
     end;
-    write(angka1,oper,angka2,'=',p:1:1);
-    
+    write('Hasil ',oper,' ',angka1,' dan ',angka2,' = ',p:1:1);   
 end.
