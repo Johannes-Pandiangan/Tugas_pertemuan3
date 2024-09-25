@@ -1,0 +1,20 @@
+program suhu;
+uses crt;
+var suhu1,suhu2:string; suhu3:integer; p:real;
+begin
+    clrscr;
+    write('pilih satuan suhu : '); readln(suhu1);
+    write('akan dikonversi ke: '); readln(suhu2);
+    write('masukkan suhu:'); readln(suhu3);
+
+    if (suhu1='celsius') and (suhu2='farenheit') then
+    p:=9/5*suhu3 +32
+    else if (suhu1='farenheit') and (suhu2='celsius') then
+    p:=5/9*(suhu3-32)
+    else if (suhu1='celsius') and (suhu2='kelvin') then
+    p:=suhu3+273
+    else if (suhu1='kelvin') and (suhu2='celsius') then
+    p:=suhu3-273;
+    writeln(suhu3,' ',suhu1,' = ',p:1:0,' ',suhu2);
+    write('SEMANGAT MEMERIKSA TUGAS KAMI KAKAK, semoga benar programku hehe');
+end.
